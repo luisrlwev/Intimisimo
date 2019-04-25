@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Intimísimo - Hotel &amp; Resort Template</title>
+    <title>Intimísimo - Autohoteles</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -55,66 +55,15 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="rooms.html">Rooms</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="active"><a href="index.html">Inicio</a></li>
+                                    <li><a href="rooms.html">Habitaciones</a></li>
+                                    <li><a href="services.html">Sexshop</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
                                 </ul>
-
+                                
                                 <!-- Button -->
                                 <div class="menu-btn">
-                                    <a href="#" class="btn palatin-btn">Make a Reservation</a>
+                                    <a href="#reserva" class="btn palatin-btn">Hacer una reservación</a>
                                 </div>
 
                             </div>
@@ -187,73 +136,67 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Book Now Area Start ##### -->
-    <div class="book-now-area">
+    <div class="book-now-area" id="reserva">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-12">
                     <div class="book-now-form">
                         <form action="#">
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select1">Check In</label>
-                                <select class="form-control" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
+                                <label for="select1">Fecha de reserva</label>
+                                <input type="date" name="fecha" class="form-control" required> 
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select2">Tipo de habitación</label>
+                                <select name="tipohabitacion" onChange="agregarOpciones(this.form)" class="form-control" required>
+                                    <option value="Junior Suite">Junior Suite</option>
+                                    <option value="Master Suite">Master Suite</option>
+                               </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select3">Tiempo de reserva</label>
+                                <select name="horahabitacion" onChange="direccion(this.form)" class="form-control">
+                                    <option value="">Esperando selección</option>
                                 </select>
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select2">Check Out</label>
-                                <select class="form-control" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
+                                <label for="select4">Adultos</label>
+                                <input type="number" name="numero-adultos" class="form-control" required>
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select3">Adults</label>
-                                <select class="form-control" id="select3">
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                </select>
+                                <label for="select5">Nombre</label>
+                                <input type="text" name="nombre" class="form-control" required>
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select4">Childrens</label>
-                                <select class="form-control" id="select4">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                </select>
+                                <label for="select6">Celular</label>
+                                <input type="tel" name="telefono" class="form-control" required>
                             </div>
 
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select7">E-mail</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+    
                             <!-- Button -->
-                            <button type="submit">Book Now</button>
+                            <button type="submit">Reserva ahora</button>
+
                         </form>
                     </div>
                 </div>
@@ -266,19 +209,18 @@
     <section class="about-us-area">
         <div class="container">
             <div class="row align-items-center">
-
                 <div class="col-12 col-lg-6">
                     <div class="about-text text-center mb-100">
                         <div class="section-heading text-center">
                             <div class="line-"></div>
-                            <h2>A place to remember</h2>
+                            <h2>Un lugar para recordar</h2>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
                         <div class="about-key-text">
                             <h6><span class="fa fa-check"></span> Donec malesuada lorem maximus mauris sceleri</h6>
                             <h6><span class="fa fa-check"></span> Malesuada lorem maximus mauris sceleri</h6>
                         </div>
-                        <a href="#" class="btn palatin-btn mt-50">Read More</a>
+                        <a href="#" class="btn palatin-btn mt-50">Leer más</a>
                     </div>
                 </div>
 
@@ -351,7 +293,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="section-heading text-center">
                         <div class="line-"></div>
-                        <h2>Choose a room</h2>
+                        <h2>Elige una habitación</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
                     </div>
                 </div>
@@ -427,7 +369,7 @@
         <div class="contact-info">
             <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
                 <div class="line-"></div>
-                <h2>Contact Info</h2>
+                <h2>Contáctanos</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
             </div>
             <h4 class="wow fadeInUp" data-wow-delay="300ms">Los Angeles 1481 Creekside Lane Avila Beach, CA 931</h4>

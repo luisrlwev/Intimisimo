@@ -381,17 +381,20 @@ img {
   text-transform: capitalize; }
   .palatin-btn:hover, .palatin-btn:focus {
     font-size: 16px;
-    background-color: #363636;
-    color: #ffffff; }
+    background-color: #000;
+    color: #ff0000;
+    border: 5px;
+    border-color: #ff0000;
+  }
   .palatin-btn.btn-2 {
-    background-color: #363636;
-    color: #ffffff; }
+    background-color: #000;
+    color: #ff0000; }
     .palatin-btn.btn-2:hover, .palatin-btn.btn-2:focus {
       font-size: 16px;
       background-color: #ff0000;
-      color: #ffffff; }
+      color: #ff0000; }
   .palatin-btn.btn-3 {
-    background-color: #ffffff;
+    background-color: #000;
     color: #ff0000;
     border: 2px solid #ff0000;
     height: 49px;
@@ -647,12 +650,14 @@ img {
 .book-now-area {
   position: relative;
   z-index: 100;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 15px;
+ }
 
 .book-now-form {
   position: relative;
   z-index: 1;
-  top: -87px; }
+  /* top: -87px; */ }
   .book-now-form form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,17 +686,17 @@ img {
       -ms-flex-direction: column;
       flex-direction: column;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-      flex: 0 0 20%;
-      max-width: 20%;
-      width: 20%;
-      height: 174px;
-      background-color: #363636;
+      -ms-flex: 0 0 12.5%;
+      flex: 0 0 12.5%;
+      max-width: 12.5%;
+      width: 12.5%;
+      height: 150px;
+      background-color:rgba(0, 0, 0, 0.63);
       border-left: 2px solid #ff0000;
       border-top: 2px solid #ff0000;
       border-bottom: 2px solid #ff0000;
       margin-bottom: 0;
-      padding: 0 30px; }
+      padding: 0 10px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .book-now-form form .form-group,
         .book-now-form form button {
@@ -708,9 +713,10 @@ img {
           border-bottom: 0 solid transparent;
           border-right: 2px solid #ff0000; } }
     .book-now-form form .form-group label {
-      color: #ff0000;
+      color: #fff;
+      text-align: center;
       display: block;
-      font-size: 14px;
+      font-size: 16px;
       width: 100%; }
     .book-now-form form button {
       border-right: 2px solid #ff0000;
@@ -724,7 +730,8 @@ img {
       padding: 0; }
       .book-now-form form button:hover, .book-now-form form button:focus {
         outline: none;
-        background-color: #363636; }
+        color: #ff0000;
+        background-color: #000; }
     .book-now-form form .form-control:focus {
       box-shadow: none; }
   .book-now-form .nice-select {
@@ -753,30 +760,31 @@ img {
       box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
       width: 100%; }
     .book-now-form .nice-select .current {
-      font-size: 24px;
+      font-size: 13px;
       line-height: 1; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .book-now-form .nice-select .current {
-          font-size: 18px; } }
+          font-size: 13px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .book-now-form .nice-select .current {
-          font-size: 14px; } }
+          font-size: 13px; } }
       @media only screen and (max-width: 767px) {
         .book-now-form .nice-select .current {
-          font-size: 18px; } }
+          font-size: 13px; } }
     .book-now-form .nice-select .option {
-      font-size: 20px;
-      color: #363636;
+      font-size: 13px;
+      color: #000;
       width: 100%; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .book-now-form .nice-select .option {
-          font-size: 16px; } }
+          font-size: 10px;
+         } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .book-now-form .nice-select .option {
-          font-size: 13px; } }
+          font-size: 10px; } }
       @media only screen and (max-width: 767px) {
         .book-now-form .nice-select .option {
-          font-size: 16px; } }
+          font-size: 10px; } }
 
 /* :: 7.0 About Us Area CSS */
 .about-thumbnail {
