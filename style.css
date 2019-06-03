@@ -1566,3 +1566,19 @@ img {
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
+
+.centrado{
+  text-align: center !important;
+}
+
+.grande{
+  font-size: 50px;
+  color: red;
+  padding: 15px;
+}
+
+.grande:hover{
+  font-size: 55px;
+  color: #fff;
+  padding: 15px;
+}

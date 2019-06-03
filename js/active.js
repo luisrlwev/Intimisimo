@@ -64,7 +64,7 @@
             $(this).css('animation-duration', anim_dur);
         });
 
-        var dot = $('.hero-slides .owl-dot');
+        /*var dot = $('.hero-slides .owl-dot');
         dot.each(function () {
             var index = $(this).index() + 1;
             if (index < 10) {
@@ -72,7 +72,7 @@
             } else {
                 $(this).html(index);
             }
-        });
+        });*/
 
         testimonial.owlCarousel({
             items: 1,
