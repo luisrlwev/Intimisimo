@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Autohoteles Intimísimo">
+    <meta name="keywords" content="responsive, retina ready, html5, css3, restaurant, hotel, motel, intimisimo" />
+    <meta name="author" content="Luis Angel Hernández Castillo">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Intimísimo - Autohoteles</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="palatin-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="palatinNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="playa.html">Inicio</a></li>
+                                    <li class="active"><a href="prooms.html">Habitaciones</a></li>
+                                    <li><a href="pservices.html">Sexshop</a></li>
+                                    <li><a href="pabout.html">Promociones</a></li>
+                                    <li><a href="pcontact.html">Contacto</a></li>
+                                </ul>
+                                <!-- Button -->
+                                <div class="menu-btn">
+                                    <a href="#reserva" class="btn palatin-btn">RESERVA</a>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/bg-6.jpg);">
+        <div class="bradcumbContent">
+            <h2>Habitaciones</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Book Now Area Start ##### -->
+    <div class="book-now-area" id="reserva">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="book-now-form">
+                        <form action="#">
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select1">FECHA</label>
+                                <input type="date" name="date" class="form-control" required>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select2">HABITACIÓN</label>
+                                <select name="tipohabitacion" onChange="agregarOpciones(this.form)" class="form-control" required>
+                                    <option value="Junior Suite">Junior Suite</option>
+                                    <option value="Master Suite">Master Suite</option>
+                               </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select3">TIEMPO</label>
+                                <select name="horahabitacion" onChange="direccion(this.form)" class="form-control" required>
+                                    <option value="">Esperando selección</option>
+                                </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select4">ADULTOS</label>
+                                <input type="number" name="numero-adultos" class="form-control" required>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select5">NOMBRE</label>
+                                <input type="text" name="nombre" class="form-control" required>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select6">TELÉFONO</label>
+                                <input type="tel" name="telefono" class="form-control" required>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select7">E-MAIL</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="submit">¡RESERVA YA!</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Book Now Area End ##### -->
+
+    <!-- ##### Rooms Area Start ##### -->
+    <section class="rooms-area section-padding-0-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="section-heading text-center">
+                        <div class="line-"></div>
+                        <h2>Elige una habitación</h2>
+                        <p>¿Más o menos espacio? ¿Con o sin alberca? ¿Una o dos camas?<br> ¡Tu elección!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Rooms Area -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/alberca.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">Desde $600 mxn</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>ALBERCA SUITE</h4>
+                            <p>La crema y nata de nuestras habitaciones, un espacio ideal para la intimidad o el reventón. Encuéntrala en sucursal Constituyentes,<br> Playa del Carmen ¡Tú decides!</p>
+                        </div>
+                        <!-- Book Room -->
+                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                    </div>
+                </div>
+
+                <!-- Single Rooms Area -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">Desde $400 mxn</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>JACUZZI SUITE</h4>
+                            <p>Dale un "twist" a tu noche de pasión y déjate envolver por un ambiente de total romanticismo y modernidad en esta sorprendente habitación.</p>
+                        </div>
+                        <!-- Book Room -->
+                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                    </div>
+                </div>
+
+                <!-- Single Rooms Area -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">Desde $450 mxn</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>MASTER SUITE</h4>
+                            <p>La consentida de aquellos que buscan la perfecta combinación entre elegancia y buen gusto. <br>Única habitación disponible en sucrusal 115 Av Sur.</p>
+                        </div>
+                        <!-- Book Room -->
+                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                    </div>
+                </div>
+
+                <!-- Single Rooms Area -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">Desde $299 mxn</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>JUNIOR SUITE</h4>
+                            <p>Nuestra clásica habitación: cómoda, espaciosa y muy elegante. Disponible en sucursales Carretera Federal y 115 Av Sur</p>
+                        </div>
+                        <!-- Book Room -->
+                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Rooms Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-lg-5">
+                    <div class="footer-widget-area mt-50">
+                        <a href="index.html" class="d-block mb-5"><img src="img/core-img/logo.png" alt="Intimísimo"></a>
+                        <p>Somos una empresa orgullosamente mexicana con presencia en Playa del Carmen y Veracruz. ¡No dejes de visitarnos!</p>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-widget-area mt-50">
+                        <h6 class="widget-title mb-5">¡ENCUÉNTRANOS!</h6>
+                        <img src="img/bg-img/footer-map.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-widget-area mt-50">
+                        <h6 class="widget-title mb-5">NEWSLETTER</h6>
+                        <form action="#" method="post" class="subscribe-form">
+                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="MAIL" required>
+                            <button type="submit">SUSCRIBIR</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copywrite Text -->
+                <div class="col-12">
+                    <div class="copywrite-text mt-30">
+                        <p>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos los derechos reservados. Desarrollado por <a href="http://parapenteagencia.com" class="solo-rojo" target="_blank">Parapente </a><i class="fa fa-heart-o" aria-hidden="true"></i>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

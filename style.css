@@ -360,7 +360,9 @@ img {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   #scrollUp:hover, #scrollUp:focus {
-    background-color: #363636; }
+    background-color: #363636;
+    color: #ff0000;
+  }
 
 /* :: 3.8.0 Palatin Button */
 .palatin-btn {
@@ -552,7 +554,7 @@ img {
       padding: 3px 5px;
       color: #ffffff;
       font-size: 14px; }
-      .hero-slides .owl-dots .owl-dot.active, .hero-slides .owl-dots .owl-dot:hover, .hero-slides .owl-dots .owl-dot:focus {
+    .hero-slides .owl-dots .owl-dot:hover, .hero-slides .owl-dots .owl-dot:focus {
         color: #ffffff;
         background-color: #1b3f4c;
         border: 2px solid #ff0000;
@@ -586,7 +588,7 @@ img {
     display: inline-block;
     padding: 60px 50px;
     background-color: rgba(0, 0, 0, 0.63);
-    border: 2px solid #ff0000;
+    /*border: 2px solid #ff0000;*/
     text-align: center; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .single-hero-slide .hero-slides-content {
@@ -847,7 +849,7 @@ img {
   z-index: 1;
   width: 100%;
   padding: 70px 50px;
-  border: 2px solid #ff0000;
+  /*border: 2px solid #ff0000;*/
   background-color: rgba(0, 0, 0, 0.63); }
   @media only screen and (max-width: 767px) {
     .pool-content {
@@ -1191,7 +1193,8 @@ img {
       color: #ffffff;
       margin-bottom: 0;
       padding: 5px 30px;
-      border: 2px solid #ff0000;
+      letter-spacing: 3px;
+      /*border: 2px solid #ff0000;*/
       background-color: rgba(0, 0, 0, 0.63); }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .breadcumb-area .bradcumbContent h2 {
@@ -1578,7 +1581,138 @@ img {
 }
 
 .grande:hover{
-  font-size: 55px;
+  font-size: 50px;
   color: #fff;
   padding: 15px;
+}
+
+/* Estilos direcciones de las sucursales */
+.sucursal{
+  margin-top: 10px;
+}
+
+.blanco{
+  color: white;
+  font-family: 'FuturaLT-Book';
+  font-size: 20px;
+}
+
+h4 a:hover{
+  color: white;
+  font-family: 'FuturaLT-Book';
+  font-size: 20px;
+}
+
+h4 a:focus{
+  color: white;
+  font-family: 'FuturaLT-Book';
+  font-size: 20px;
+}
+
+/* Estilos de imágenes del home */
+
+.imagen{
+  width: 30%;
+  margin-top: 20px;
+}
+
+.texto h2{
+  color: white;
+  margin-top: 20px;
+}
+
+.single-team-member {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-team-member img {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  .single-team-member .hover-text {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-bottom: 25px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 121, 2, 0)), to(#FF0000));
+    background-image: -webkit-linear-gradient(top, rgba(255, 121, 2, 0), #FF0000);
+    background-image: -o-linear-gradient(top, rgba(255, 121, 2, 0), #FF0000);
+    background-image: linear-gradient(to bottom, rgba(255, 121, 2, 0), #FF0000);
+    opacity: 0;
+    visibility: hidden; }
+    .single-team-member .hover-text h2 {
+      margin-bottom: 5px;
+      color: #ffffff; }
+    .single-team-member .hover-text h6 {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      display: block; }
+    .single-team-member .hover-text .social-info a {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 23px;
+      margin: 0 5px; }
+      .single-team-member .hover-text .social-info a:hover, .single-team-member .hover-text .social-info a:focus {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+  .single-team-member:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+  .single-team-member:hover .hover-text {
+    opacity: 1;
+    visibility: visible; }
+
+/* Estilos para colores */
+.solo-blanco{
+  color: white !important;
+}
+
+.solo-rojo{
+  color: #ff0000 !important;
+}
+
+/* Estilos para las redes sociales del index */
+.red-social a{
+  color: #FF0000;
+  font-size: 50px;
+  margin: 5px;
+}
+
+.red-social a:hover{
+  color: #fff;
+}
+
+/* Estilo fondo de index */
+.fondo{
+  background-image: url(img/bg-img/fondo.jpg);
+  background-size: 100%;
+}
+
+/* Estilos de color en el contacto */
+.blanco-contacto{
+  color: white !important;
+  font-size: 15px;
+}
+
+.blanco-contacto:hover, .blanco-contacto:focus{
+  color: white !important;
+  font-size: 15px;
 }
