@@ -2,24 +2,28 @@
 <html lang="es">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147524022-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147524022-1');
+  </script>
     <!-- Metas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Autohoteles Intimísimo">
-    <meta name="keywords" content="responsive, retina ready, html5, css3, restaurant, hotel, motel, intimisimo" />
+    <meta name="description" content="Intimisimo❤️ Playa del Carmen - Cuenta con servicio a cuartos, estacionamiento personal privado🚗, aire acondicionado, smart tv📺, internet y venta de artículos🔥">
+    <meta name="keywords" content="intimisimo, intimisimo playa del carmen, motel intimisimo playa del carmen, intimisimo playa del carmen precios, hotel intimisimo playa del carmen precios, hotel intimisimo playa del carmen, motel intimisimo playa del carmen precios, intimisimo playa del carmen carretera federal, intimisimo playa del carmen constituyentes, intimisimo playa del carmen federal" />
     <meta name="author" content="Luis Angel Hernández Castillo">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <!-- Title -->
-    <title>Intimísimo - Autohoteles</title>
-
+    <title>Intimísimo - Playa del Carmen</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.png">
-
+    <link rel="icon" href="img/core-img/favicon.ico">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -29,7 +33,6 @@
             <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
         </div>
     </div>
-
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <!-- Navbar Area -->
@@ -38,35 +41,30 @@
                 <div class="container">
                     <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="palatinNav">
-
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
+                        <a href="http://intimisimo.mx" data-toggle="tooltip" data-placement="top" title="Página principal" class="nav-brand"><img src="img/core-img/logo.png" alt="Logo Intimísimo"></a>
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
-
                         <!-- Menu -->
                         <div class="classy-menu">
-
                             <!-- close btn -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
-
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="playa.html">Inicio</a></li>
-                                    <li><a href="prooms.html">Habitaciones</a></li>
-                                    <li><a href="pservices.html">Sexshop</a></li>
-                                    <li><a href="pabout.html">Promociones</a></li>
-                                    <li><a href="pcontact.html">Contacto</a></li>
+                                    <li class="active"><a href="#">Inicio</a></li>
+                                    <li><a href="habitaciones-playa">Habitaciones</a></li>
+                                    <li><a href="sexshop-playa">Sexshop</a></li>
+                                    <!--<li><a href="promociones-playa">Promociones</a></li>-->
+                                    <li><a href="contacto-playa">Contacto</a></li>
                                 </ul>
                                 <!-- Button -->
                                 <div class="menu-btn">
-                                    <a href="#reserva" class="btn palatin-btn">RESERVA</a>
+                                    <a href="#reserva" class="btn palatin-btn" data-toggle="tooltip" data-placement="top" title="¡Reserva ya!">RESERVA</a>
                                 </div>
                             </div>
                             <!-- Nav End -->
@@ -77,15 +75,27 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
+    <!-- ##### Aniversario ##### -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="alert" id="alerta">
+                    <img src="img/bg-img/aniversario.png" alt="aniversario" class="aniversario">
+                    <button type="button" class="close aniversario" data-dismiss="alert" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Aniversario End ##### -->
     <!-- ##### Hero Area Start ##### -->
     <section class="hero-area">
         <div class="hero-slides owl-carousel">
-
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+                <div class="slide-img bg-img" alt="Pasión" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
                 <div class="container">
                     <div class="row justify-content-center text-center">
                         <div class="col-12 col-lg-9">
@@ -93,17 +103,15 @@
                             <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
                                 <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
                                 <h2 data-animation="fadeInUp" data-delay="500ms">PASIÓN</h2>
-                                <!--<p data-animation="fadeInUp" data-delay="700ms">Somos el auto-hotel favorito de la gente en Playa del Carmen y Veracruz. Contamos con 5 sucursales en el corazón del Caribe Mexicano y el Golfo de México.</p>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <div class="slide-img bg-img" alt="Deseo" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
                 <div class="container">
                     <div class="row justify-content-center text-center">
                         <div class="col-12 col-lg-9">
@@ -111,17 +119,15 @@
                             <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
                                 <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
                                 <h2 data-animation="fadeInUp" data-delay="500ms">DESEO</h2>
-                                <!--<p data-animation="fadeInUp" data-delay="700ms">En la intimidad, cada momento es importante. Hazlo aún más inolvidable con nuestros paquetes de decoración.</p>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-3.jpg);"></div>
+                <div class="slide-img bg-img" alt="Intimidad" style="background-image: url(img/bg-img/bg-3.jpg);"></div>
                 <div class="container">
                     <div class="row justify-content-center text-center">
                         <div class="col-12 col-lg-9">
@@ -129,7 +135,6 @@
                             <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
                                 <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
                                 <h2 data-animation="fadeInUp" data-delay="500ms">INTIMIDAD</h2>
-                                <!--<p data-animation="fadeInUp" data-delay="700ms">Gracias al gusto y la preferencia de la gente hemos abierto 2 nuevas sucursales (Av. Miguel Alemán en Veracruz y Av. Constituyentes en Playa del Carmen) ¡Conócelas!</p>-->
                             </div>
                         </div>
                     </div>
@@ -138,64 +143,59 @@
         </div>
     </section>
     <!-- ##### Hero Area End ##### -->
-
     <!-- ##### Book Now Area Start ##### -->
     <div class="book-now-area" id="reserva">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="book-now-form">
-                        <form action="#">
+                        <form>
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select1">FECHA</label>
                                 <input type="date" name="date" class="form-control" required>
                             </div>
-
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select">SUCURSAL</label>
+                                <select name="sucursal" class="form-control" id="sucursal" onChange="agregarOpciones(this.form)" required>
+                                    <option value="0">Elige Sucursal</option>
+                                    <option value="1">Constituyentes</option>
+                                    <option value="2">Carretera Federal</option>
+                                    <option value="3">Ejido Sur</option>
+                                </select>
+                            </div>
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select2">HABITACIÓN</label>
-                                <select name="tipohabitacion" onChange="agregarOpciones(this.form)" class="form-control" required>
-                                    <option value="Junior Suite">Junior Suite</option>
-                                    <option value="Master Suite">Master Suite</option>
-                               </select>
+                                <select name="habitacion" id="habitacion" onChange="agregarOpciones(this.form)" class="form-control" required>
+                                    <option value="0">Esperando Sucursal</option>
+                                </select>
                             </div>
-
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select3">TIEMPO</label>
-                                <select name="horahabitacion" onChange="direccion(this.form)" class="form-control" required>
-                                    <option value="">Esperando selección</option>
+                                <select name="tiempo" id="tiempo" class="form-control" required>
+                                    <option value="0">Esperando Habitación</option>
                                 </select>
                             </div>
-
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select4">ADULTOS</label>
                                 <input type="number" name="numero-adultos" class="form-control" required>
                             </div>
-
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select5">NOMBRE</label>
                                 <input type="text" name="nombre" class="form-control" required>
                             </div>
-
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="select6">TELÉFONO</label>
                                 <input type="tel" name="telefono" class="form-control" required>
                             </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select7">E-MAIL</label>
-                                <input type="email" name="email" class="form-control" required>
-                            </div>
-
                             <!-- Button -->
                             <button type="submit">¡RESERVA YA!</button>
-
                         </form>
                     </div>
                 </div>
@@ -203,7 +203,6 @@
         </div>
     </div>
     <!-- ##### Book Now Area End ##### -->
-
     <!-- ##### About Us Area Start ##### -->
     <section class="about-us-area">
         <div class="container">
@@ -221,23 +220,21 @@
                             <h6 class="solo-blanco"><span class="fa fa-check"></span> Servicio de bar y restaurante. </h6>
                             <h6 class="solo-blanco"><span class="fa fa-check"></span> Wi-Fi.</h6>
                         </div>
-                        <a href="#" class="btn palatin-btn mt-50">Leer Más</a>
                     </div>
                 </div>
-
                 <div class="col-12 col-lg-6">
                     <div class="about-thumbnail homepage mb-100">
                         <!-- First Img -->
                         <div class="first-img wow fadeInUp" data-wow-delay="100ms">
-                            <img src="img/bg-img/5.jpg" alt="">
+                            <img src="img/bg-img/5.jpg" alt="Habitación uno" title="Comodidad">
                         </div>
                         <!-- Second Img -->
                         <div class="second-img wow fadeInUp" data-wow-delay="300ms">
-                            <img src="img/bg-img/6.jpg" alt="">
+                            <img src="img/bg-img/6.jpg" alt="Habitación dos" title="Lujo">
                         </div>
                         <!-- Third Img-->
                         <div class="third-img wow fadeInUp" data-wow-delay="500ms">
-                            <img src="img/bg-img/7.jpg" alt="">
+                            <img src="img/bg-img/7.jpg" alt="Habitación tres" title="Pasión">
                         </div>
                     </div>
                 </div>
@@ -245,9 +242,8 @@
         </div>
     </section>
     <!-- ##### About Us Area End ##### -->
-
     <!-- ##### Pool Area Start ##### -->
-    <section class="pool-area section-padding-100 bg-img bg-fixed" style="background-image: url(img/bg-img/4.png);">
+    <section class="pool-area section-padding-100 bg-img bg-fixed" style="background-image: url(img/bg-img/4.jpg);">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-12 col-lg-7">
@@ -257,7 +253,6 @@
                             <h2>NUEVAS HABITACIONES CON JACUZZI</h2>
                             <p>La diversión, el romance y la pasión nunca acaban en nuestras nuevas sucursales, todas las habitaciones cuentan con jacuzzi y cuartos especiales con mini alberca.</p>
                         </div>
-
                         <div class="row">
                             <div class="col-12 col-sm-4">
                                 <div class="pool-feature">
@@ -278,15 +273,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Button -->
-                        <a href="#" class="btn palatin-btn mt-50">Leer Más</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ##### Pool Area End ##### -->
-
     <!-- ##### Rooms Area Start ##### -->
     <section class="rooms-area section-padding-100-0">
         <div class="container">
@@ -294,91 +286,84 @@
                 <div class="col-12 col-lg-6">
                     <div class="section-heading text-center">
                         <div class="line-"></div>
-                        <h2>ESCOGE TU HABITACIÓN</h2>
+                        <h2>TÚ ESCOGES</h2>
                         <p>¿Más o menos espacio? ¿Con o sin alberca? ¿Una o dos camas?<br> ¡Tu elección!</p>
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-center">
-
                 <!-- Single Rooms Area -->
                 <div class="col-12 col-md-6 col-lg-6">
-                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms" title="Alberca Suite">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/alberca.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" alt="alberca-suite" style="background-image: url(img/bg-img/alberca.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">Desde $600 mxn</p>
+                        <p class="price-from">Desde $600 mxn por 1 hora</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
                             <h4>ALBERCA SUITE</h4>
-                            <p>La crema y nata de nuestras habitaciones, un espacio ideal para la intimidad o el reventón. Encuéntrala en sucursal Constituyentes,<br> Playa del Carmen ¡Tú decides!</p>
+                            <p>La crema y nata de nuestras habitaciones, un espacio ideal para la intimidad o el reventón. <br>ENCUÉNTRALA en sucursal Constituyentes</p>
                         </div>
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                        <a href="#reserva" class="book-room-btn btn palatin-btn" data-toggle="tooltip" data-placement="bottom" title="¡Reserva ya!">¡RESÉRVALA!</a>
                     </div>
                 </div>
-
                 <!-- Single Rooms Area -->
                 <div class="col-12 col-md-6 col-lg-6">
-                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms" title="Jacuzzi Suite">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" alt="jacuzzi-suite" style="background-image: url(img/bg-img/1.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">Desde $400 mxn</p>
+                        <p class="price-from">Desde $400 mxn por 1 hora</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
                             <h4>JACUZZI SUITE</h4>
-                            <p>Dale un "twist" a tu noche de pasión y déjate envolver por un ambiente de total romanticismo y modernidad en esta sorprendente habitación.</p>
+                            <p>Dale un "twist" a tu noche de pasión y déjate envolver por un ambiente de total romanticismo y modernidad en esta sorprendente habitación.<br>ENCUÉNTRALA en sucursal Constituyentes.</p>
                         </div>
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                        <a href="#reserva" class="book-room-btn btn palatin-btn" data-toggle="tooltip" data-placement="bottom" title="¡Reserva ya!">¡RESÉRVALA!</a>
                     </div>
                 </div>
-
                 <!-- Single Rooms Area -->
                 <div class="col-12 col-md-6 col-lg-6">
-                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="300ms" title="Master Suite">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" alt="master-suite" style="background-image: url(img/bg-img/8.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">Desde $450 mxn</p>
+                        <p class="price-from">Desde $600 mxn por 3 horas</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
                             <h4>MASTER SUITE</h4>
-                            <p>La consentida de aquellos que buscan la perfecta combinación entre elegancia y buen gusto. <br>Única habitación disponible en sucrusal 115 Av Sur.</p>
+                            <p>La consentida de aquellos que buscan la perfecta combinación entre elegancia y buen gusto. <br>Solo en sucursal Ejido 115 Av.</p>
                         </div>
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                        <a href="#reserva" class="book-room-btn btn palatin-btn" data-toggle="tooltip" data-placement="bottom" title="¡Reserva ya!">¡RESÉRVALA!</a>
                     </div>
                 </div>
-
                 <!-- Single Rooms Area -->
                 <div class="col-12 col-md-6 col-lg-6">
-                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="500ms" title="Junior Suite">
                         <!-- Thumbnail -->
-                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
+                        <div class="bg-thumbnail bg-img" alt="junior-suite" style="background-image: url(img/bg-img/9.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">Desde $299 mxn</p>
+                        <p class="price-from">Desde $399 mxn por 3 horas</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
                             <h4>JUNIOR SUITE</h4>
-                            <p>Nuestra clásica habitación: cómoda, espaciosa y muy elegante. Disponible en sucursales Carretera Federal y 115 Av Sur</p>
+                            <p>Nuestra clásica habitación: cómoda, espaciosa y muy elegante. <br>Disponible en sucursales Carretera Federal y Ejido 115 Av.</p>
                         </div>
                         <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">¡RESÉRVALA!</a>
+                        <a href="#reserva" class="book-room-btn btn palatin-btn" data-toggle="tooltip" data-placement="bottom" title="¡Reserva ya!">¡RESÉRVALA!</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- ##### Rooms Area End ##### -->
-
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area d-flex flex-wrap align-items-center">
         <!-- Contact Info -->
@@ -392,73 +377,77 @@
                 <div class="col-md-4">
                     <h4 class="wow fadeInUp blanco" data-wow-delay="300ms">
                         <div class="sucursal">
-                            <strong class="blanco solo-rojo">Sucursal Constituyentes</strong><br>Calle 85 con calle 30 Col. Ejidal.<br><strong class="blanco solo-rojo">Tel: </strong><a href="tel: 984 188 0339" class="blanco">(984) 188 0339</a><br>
+                            <strong class="blanco solo-rojo">Sucursal Constituyentes</strong><br>Calle 85 con calle 30 Col. Ejidal.<br><strong class="blanco solo-rojo">WhatsApp: </strong><a href="https://wa.me/529841880339?text=Hola,%20me%20gustaría%20saber%20el%20costo%20de%20las%20habitaciones" class="blanco">(984) 188 0339</a>
                         </div>
                     </h4>
                 </div>
                 <div class="col-md-4">
                     <h4 class="wow fadeInUp blanco" data-wow-delay="300ms">
-                    <div class="sucursal">
-                        <strong class="blanco solo-rojo">Sucursal Carretera Federal</strong><br>Carretera Cancún-Tulum km 294 frente al Grand Coral.<br><strong class="blanco solo-rojo">Tel: </strong><a href="tel: 984 239 9815" class="blanco">(984) 239 9815</a><br>
-                    </div>
+                        <div class="sucursal">
+                            <strong class="blanco solo-rojo">Sucursal Carretera Federal</strong><br>Carretera Cancún-Tulum km 294 frente al Grand Coral.<br><strong class="blanco solo-rojo">WhatsApp: </strong><a href="https://wa.me/529842399815?text=Hola,%20me%20gustaría%20saber%20el%20costo%20de%20las%20habitaciones" class="blanco">(984) 239 9815</a>
+                        </div>
                     </h4>
                 </div>
                 <div class="col-md-4">
                     <h4 class="wow fadeInUp blanco" data-wow-delay="300ms">
-                    <div class="sucursal">
-                        <strong class="blanco solo-rojo">Sucursal Ejido Sur</strong><br>115 Av. sur esquina calle 23 sur.<br><strong class="blanco solo-rojo">Tel: </strong><a href="tel: 984 212 4463" class="blanco">(984) 212 4463</a>
-                    </div>
+                        <div class="sucursal">
+                            <strong class="blanco solo-rojo">Sucursal Ejido Sur</strong><br>115 Av. sur esquina calle 23 sur.<br><strong class="blanco solo-rojo">WhatsApp: </strong><a href="https://wa.me/522124463?text=Hola,%20me%20gustaría%20saber%20el%20costo%20de%20las%20habitaciones" class="blanco">(984) 212 4463</a>
+                        </div>
                     </h4>
                 </div>
             </div>
-            <!--<h5 class="wow fadeInUp" data-wow-delay="400ms">+53 345 7953 32453</h5>
-            <h5 class="wow fadeInUp" data-wow-delay="500ms">yourmail@gmail.com</h5>-->
             <!-- Social Info -->
             <div class="social-info mt-20 wow fadeInUp" data-wow-delay="600ms">
-                <a href="https://www.facebook.com/IntimisimoMX/" class="grande"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/intimisimomx/" class="grande"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/IntimisimoMX/" class="grande" data-toggle="tooltip" data-placement="bottom" title="Intimísimo Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/intimisimomx/" class="grande" data-toggle="tooltip" data-placement="bottom" title="Intimísimo Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
     <!-- ##### Contact Area End ##### -->
-
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
             <div class="row">
-
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-lg-5">
                     <div class="footer-widget-area mt-50">
-                        <a href="index.html" class="d-block mb-5"><img src="img/core-img/logo.png" alt="Intimísimo"></a>
+                        <a href="http://intimisimo.mx" class="d-block mb-5" data-toggle="tooltip" data-placement="top" title="Página principal"><img src="img/core-img/logo.png" alt="logo-intimisimo"></a>
                         <p>Somos una empresa orgullosamente mexicana con presencia en Playa del Carmen y Veracruz. ¡No dejes de visitarnos!</p>
                     </div>
                 </div>
-
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-widget-area mt-50">
                         <h6 class="widget-title mb-5">¡ENCUÉNTRANOS!</h6>
-                        <img src="img/bg-img/footer-map.png" alt="">
+                        <img src="img/bg-img/footer-map.png" alt="intimisimo-mexico" data-toggle="tooltip" data-placement="bottom" title="Veracruz y Playa del Carmen">
                     </div>
                 </div>
-
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-widget-area mt-50">
                         <h6 class="widget-title mb-5">NEWSLETTER</h6>
-                        <form action="#" method="post" class="subscribe-form">
-                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="MAIL" required>
-                            <button type="submit">SUSCRIBIR</button>
-                        </form>
+                        <div id="contact-form" class="wow fadeIn first">
+                            <form id="contactNews" data-toggle="validator" class="subscribe-form">
+                                <div class="form-group col-12">
+                                    <input type="email" class="form-control mb-5" id="subscribeemail" placeholder="E-MAIL" required>
+                                    <div class="help-block with-errors"></div>
+                                    <div id="NewsMsgSubmit" class="h3 text-center hidden"></div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn palatin-btn" type="submit" id="form-submit" title="¡Suscríbete ya!">SUSCRIBIR</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Copywrite Text -->
                 <div class="col-12">
                     <div class="copywrite-text mt-30">
                         <p>
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos los derechos reservados. Desarrollado por <a href="http://parapenteagencia.com" class="solo-rojo" target="_blank">Parapente </a><i class="fa fa-heart-o" aria-hidden="true"></i>.
+                            Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                            </script>. Todos los derechos reservados. Desarrollado por <a href="http://parapenteagencia.com" class="solo-rojo" target="_blank" data-toggle="tooltip" data-placement="top" title="¡Visítanos!">Parapente </a><i class="fa fa-heart-o" aria-hidden="true"></i>.
                         </p>
                     </div>
                 </div>
@@ -466,7 +455,11 @@
         </div>
     </footer>
     <!-- ##### Footer Area End ##### -->
-
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="1667473250197513" theme_color="#ff0000" logged_in_greeting="&#xa1;Hola! &#xa1;Gracias por contactarnos! " logged_out_greeting="&#xa1;Hola! &#xa1;Gracias por contactarnos! ">
+    </div>
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -474,11 +467,17 @@
     <script src="js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- contact-form -->
+    <script src="js/validator.min.js"></script>
+    <script src="js/form-newsletter-playa.js"></script>
+    <!-- Reservas -->
+    <script src="js/reservas-playa.js"></script>
     <!-- All Plugins js -->
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
+    <!-- Facebook Messenger -->
+    <script src="js/fbmessenger.js"></script>
 </body>
 
 </html>
